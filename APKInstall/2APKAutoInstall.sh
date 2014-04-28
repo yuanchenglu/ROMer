@@ -4,15 +4,14 @@ echo Welcome to bluth autoAPKInstall.sh
 echo cd ~/project/ROMer/APKInstall/
 cd ~/project/ROMer/APKInstall/
 
-echo adb kill-server
-adb kill-server
-echo adb start-server
-adb start-server
-echo adb devices
-adb devices
+echo ./adbstart.sh
+./adbstart.sh
 
 echo chmod 644 systemAPP/*.apk
 chmod 644 systemAPP/*.apk
+
+echo adb root
+adb root
 echo adb remount
 adb remount
 
