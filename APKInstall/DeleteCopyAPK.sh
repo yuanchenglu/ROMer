@@ -21,17 +21,24 @@ echo ----------------------------------
 echo ----------------------------------
 echo ----------------------------------
 
+echo cd $systemApp_dir/
 cd $systemApp_dir/
 rm AppDisabler.apk
-rm Baiduinput.apk
+rm Baiduinput_v4.2.5.apk
+rm BaiduNetworkLocation.apk
 rm cleanmaster.apk
 
+echo cd $systemVendor_dir/
 cd $systemVendor_dir/
 cp mi-tools_1.9.2.apk ~/tmp/app_rom/
 cp WSM_tools_2.2.1.apk ~/tmp/app_rom/
 cp ViPER4Android_v2.3.3.0.apk ~/tmp/app_rom/
-rm -rf *
+rm -r *
 cp ~/tmp/app_rom/*.apk .
+
+echo cd $dataApp_dir/
+cd $dataApp_dir/
+rm -r *.apk
 
 echo ----------------------------------
 echo ----------------------------------
@@ -45,7 +52,10 @@ echo ----------------------------------
 echo ----------------------------------
 echo ----------------------------------
 
+echo cd $APKInstall_dir/
 cd $APKInstall_dir/
-cp systemAPP/*.apk $systemVendor_dir/
+cp systemAPP/*.apk $systemApp_dir/
 cp systemLib/*.so $systemLib_dir/
 cp dataAPP/*.apk $systemVendor_dir/
+
+echo delete and copy finished!!!
