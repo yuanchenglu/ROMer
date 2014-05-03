@@ -121,11 +121,12 @@ echo ----------------------------------
 $press_enter
 cd $work_dir/
 mv $rom_new_name $sign_files_dir/
+cd $chufang_dir/
 $sign_files_in_folder_bluth
 cd $sign_files_dir/
 echo mv *.zip $output_zip_bluth_dir/
 mv *.zip $output_zip_bluth_dir/
-ll $output_zip_bluth_dir/
+ls $output_zip_bluth_dir/
 
 echo ----------------------------------
 echo ----------------------------------
