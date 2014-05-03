@@ -11,7 +11,7 @@ work_old_dir=$chufang_dir/WORKING_OLD
 orignal_update_dir=$chufang_dir/original_update
 tmp_orignal_dir=$orignal_update_dir/tmp
 
-sign_files_dir=$chufang_dir/sign_files_dir
+sign_files_dir=$chufang_dir/sign_files
 signed_update_zip_bluth_dir=$chufang_dir/signed_update_zip_bluth
 
 chufang_scripts_dir=$chufang_dir/scripts
@@ -47,7 +47,7 @@ $change_rom_name
 
 
 cd $chufang_dir/
-zip $rom_new_name $work_dir
+zip $rom_new_name $work_dir/
 
 
 cd $chufang_dir/
