@@ -3,7 +3,8 @@ rom_old_name=精英IOCEAN_X7_MIUI_4.5.2开发版.zip
 rom_new_name=Bluth_精英IOCEAN_X7_MIUI_4.5.2.zip
 
 
-APKInstall_dir=~/project/ROMer/APKInstall
+romer_dir=~/project/ROMer
+APKInstall_dir=$romer_dir/APKInstall
 chufang_dir=~/soft/ChuFang_cn_0.179
 
 work_dir=$chufang_dir/WORKING_
@@ -16,14 +17,15 @@ output_zip_bluth_dir=$chufang_dir/OUTPUT_ZIP_Bluth
 
 chufang_scripts_dir=$chufang_dir/scripts
 chufang_scripts_bluth_dir=$chufang_dir/scripts/bluth
+ROMer_scripts_bluth_dir=$romer_dir/bluth
+
 do_zipalign=$chufang_scripts_dir/do_zipalign
 change_rom_name=$chufang_scripts_dir/change_rom_name
 do_deodex=$chufang_scripts_dir/do_deodex
 sign_files_in_folder_bluth=$chufang_scripts_bluth_dir/sign_files_in_folder
 do_zipalign_bluth=$chufang_scripts_bluth_dir/do_zipalign
 
-
-press_enter=$APKInstall_dir/bluth/press_enter
+press_enter=$ROMer_scripts_bluth_dir/press_enter
 
 echo ----------------------------------
 echo ----------------------------------
