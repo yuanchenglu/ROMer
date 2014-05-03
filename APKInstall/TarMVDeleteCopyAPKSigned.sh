@@ -108,6 +108,7 @@ cd $chufang_dir/
 mv $rom_new_name $sign_files_dir/
 $sign_files_in_folder_bluth
 cd $sign_files_dir/
+echo mv *.zip $output_zip_bluth_dir/
 mv *.zip $output_zip_bluth_dir/
 
 echo ----------------------------------
