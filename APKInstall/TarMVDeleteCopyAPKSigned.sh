@@ -19,14 +19,11 @@ chufang_scripts_dir=$chufang_dir/scripts
 chufang_scripts_bluth_dir=$chufang_dir/scripts/bluth
 ROMer_scripts_bluth_dir=$romer_dir/bluth
 
-do_zipalign=$chufang_scripts_dir/do_zipalign
-change_rom_name=$chufang_scripts_dir/change_rom_name
+do_zipalign_bluth=$chufang_scripts_dir/do_zipalign_bluth
+change_rom_name_bluth=$chufang_scripts_dir/change_rom_name_bluth
 do_deodex=$chufang_scripts_dir/do_deodex
-sign_files_in_folder_bluth=$chufang_scripts_bluth_dir/sign_files_in_folder
-do_zipalign_bluth=$chufang_scripts_bluth_dir/do_zipalign
-change_rom_name_bluth=$chufang_scripts_dir/bluth/change_rom_name
-
-press_enter=$ROMer_scripts_bluth_dir/press_enter
+sign_files_in_folder_bluth=$chufang_scripts_dir/sign_files_in_folder_bluth
+press_enter=$ROMer_scripts_dir/press_enter
 
 echo ----------------------------------
 echo ----------------------------------
