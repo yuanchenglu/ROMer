@@ -18,6 +18,8 @@ change_rom_name=$chufang_scripts_dir/change_rom_name
 deodex=$chufang_scripts_dir/do_deodex
 signed_files=$chufang_scripts_dir/signed_files
 
+signed_dir=$chufang_dir/signed_update_zip
+
 cd $chufang_dir/
 rm -r $work_old_dir/
 mkdir $work_old_dir/
@@ -48,6 +50,7 @@ cd $chufang_dir/
 zip $rom_new_name work_dir
 
 
-cp $rom_new_name $signed_dir/
+cp $rom_new_name $sign_dir/
 ./$signed_files
-
+cd $sign_dir/
+mv *.zip $signed_dir/
