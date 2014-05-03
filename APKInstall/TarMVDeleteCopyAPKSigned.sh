@@ -107,8 +107,8 @@ echo ----------------------------------
 echo ----------------------------------
 echo ----------------------------------
 $press_enter
-cd $chufang_dir/
-zip $rom_new_name $work_dir/
+cd $work_dir/
+zip -r $rom_new_name *
 
 
 echo ----------------------------------
@@ -119,7 +119,7 @@ echo ----------------------------------
 echo ----------------------------------
 echo ----------------------------------
 $press_enter
-cd $chufang_dir/
+cd $work_dir/
 mv $rom_new_name $sign_files_dir/
 $sign_files_in_folder_bluth
 cd $sign_files_dir/
