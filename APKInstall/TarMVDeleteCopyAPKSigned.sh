@@ -41,9 +41,9 @@ mv $tmp_orignal_dir/* $work_dir/
 cd $APKInstall_dir/
 ./DeleteCopyAPK.sh
 
-
-./$do_zipalign
-./$change_rom_name
+cd $chufang_scripts_dir/
+$do_zipalign
+$change_rom_name
 
 
 cd $chufang_dir/
@@ -51,6 +51,6 @@ zip $rom_new_name work_dir
 
 
 cp $rom_new_name $sign_dir/
-./$signed_files
+$signed_files
 cd $sign_dir/
 mv *.zip $signed_dir/
