@@ -22,6 +22,9 @@ do_deodex=$chufang_scripts_dir/do_deodex
 sign_files_in_folder_bluth=$chufang_scripts_bluth_dir/sign_files_in_folder
 do_zipalign_bluth=$chufang_scripts_bluth_dir/do_zipalign
 
+
+press_enter=$APKInstall_dir/bluth/press_enter
+
 echo ----------------------------------
 echo ----------------------------------
 echo ----------------------------------
@@ -30,6 +33,7 @@ echo ----------------------------------
 echo ----------------------------------
 echo ----------------------------------
 
+$press_enter
 
 echo ----------------------------------
 echo ----------------------------------
@@ -38,6 +42,7 @@ echo 1.backup $work_dir to $work_old_dir
 echo ----------------------------------
 echo ----------------------------------
 echo ----------------------------------
+$press_enter
 cd $chufang_dir/
 rm -r $work_old_dir/
 mkdir $work_old_dir/
@@ -51,6 +56,7 @@ echo 2.unzip $rom_old_name to $work_dir
 echo ----------------------------------
 echo ----------------------------------
 echo ----------------------------------
+$press_enter
 cd $orignal_update_dir/
 rm -r $tmp_orignal_dir/
 mkdir $tmp_orignal_dir/
@@ -69,6 +75,7 @@ echo 3.DeleteCopyAPK.sh to install bluth apk
 echo ----------------------------------
 echo ----------------------------------
 echo ----------------------------------
+$press_enter
 cd $APKInstall_dir/
 ./DeleteCopyAPK.sh
 
@@ -79,6 +86,7 @@ echo 4.do chufang_scripts
 echo ----------------------------------
 echo ----------------------------------
 echo ----------------------------------
+$press_enter
 cd $chufang_scripts_dir/
 echo do_zipalign
 $do_zipalign_bluth
@@ -95,6 +103,7 @@ echo 5.zip $work_dir to $rom_new_name
 echo ----------------------------------
 echo ----------------------------------
 echo ----------------------------------
+$press_enter
 cd $chufang_dir/
 zip $rom_new_name $work_dir/
 
@@ -106,6 +115,7 @@ echo 8.sign zip file to $output_zip_bluth_dir/
 echo ----------------------------------
 echo ----------------------------------
 echo ----------------------------------
+$press_enter
 cd $chufang_dir/
 mv $rom_new_name $sign_files_dir/
 $sign_files_in_folder_bluth
