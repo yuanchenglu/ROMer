@@ -15,10 +15,12 @@ sign_files_dir=$chufang_dir/sign_files
 output_zip_bluth_dir=$chufang_dir/OUTPUT_ZIP_Bluth
 
 chufang_scripts_dir=$chufang_dir/scripts
+chufang_scripts_bluth_dir=$chufang_dir/scripts/bluth
 do_zipalign=$chufang_scripts_dir/do_zipalign
 change_rom_name=$chufang_scripts_dir/change_rom_name
 do_deodex=$chufang_scripts_dir/do_deodex
-sign_files_in_folder_bluth=$chufang_scripts_dir/sign_files_in_folder_bluth
+sign_files_in_folder_bluth=$chufang_scripts_bluth_dir/sign_files_in_folder
+do_zipalign_bluth=$chufang_scripts_bluth_dir/do_zipalign
 
 echo ----------------------------------
 echo ----------------------------------
@@ -79,7 +81,7 @@ echo ----------------------------------
 echo ----------------------------------
 cd $chufang_scripts_dir/
 echo do_zipalign
-$do_zipalign
+$do_zipalign_bluth
 echo do_deodex
 $do_deodex
 echo change_rom_name
