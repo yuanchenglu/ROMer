@@ -7,12 +7,12 @@ APKInstall_dir=~/project/ROMer/APKInstall
 chufang_dir=~/soft/ChuFang_cn_0.179
 
 work_dir=$chufang_dir/WORKING_
-work_old_dir=$chufang_dir/WORKING_OLD
+work_old_dir=$chufang_dir/working_old
 orignal_update_dir=$chufang_dir/original_update
 tmp_orignal_dir=$orignal_update_dir/tmp
 
 sign_files_dir=$chufang_dir/sign_files
-signed_update_zip_bluth_dir=$chufang_dir/signed_update_zip_bluth
+output_zip_bluth_dir=$chufang_dir/OUTPUT_ZIP_Bluth
 
 chufang_scripts_dir=$chufang_dir/scripts
 do_zipalign=$chufang_scripts_dir/do_zipalign
@@ -100,15 +100,15 @@ zip $rom_new_name $work_dir/
 echo ----------------------------------
 echo ----------------------------------
 echo ----------------------------------
-echo 8.sign zip file to $signed_update_zip_bluth_dir/
+echo 8.sign zip file to $output_zip_bluth_dir/
 echo ----------------------------------
 echo ----------------------------------
 echo ----------------------------------
 cd $chufang_dir/
-cp $rom_new_name $sign_files_dir/
+mv $rom_new_name $sign_files_dir/
 $sign_files_in_folder_bluth
 cd $sign_files_dir/
-mv *.zip $signed_update_zip_bluth_dir/
+mv *.zip $output_zip_bluth_dir/
 
 echo ----------------------------------
 echo ----------------------------------
