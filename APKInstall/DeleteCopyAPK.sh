@@ -2,7 +2,7 @@
 APKInstall_dir=~/project/ROMer/APKInstall
 
 chufang_dir=~/soft/ChuFang_cn_0.179
-work_dir=$chufang_dir/WORKING_050214_212803
+work_dir=$chufang_dir/WORKING_
 systemApp_dir=$work_dir/system/app
 systemVendor_dir=$work_dir/system/vendor/operator/app
 systemLib_dir=$work_dir/system/lib
@@ -24,7 +24,7 @@ echo ----------------------------------
 echo cd $systemApp_dir/
 cd $systemApp_dir/
 rm AppDisabler.apk
-rm Baiduinput_v4.2.5.apk
+rm Baiduinput_v4.3.1.5.apk
 rm BaiduNetworkLocation.apk
 rm cleanmaster.apk
 
