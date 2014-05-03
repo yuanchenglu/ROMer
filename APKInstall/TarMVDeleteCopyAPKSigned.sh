@@ -24,6 +24,7 @@ change_rom_name=$chufang_scripts_dir/change_rom_name
 do_deodex=$chufang_scripts_dir/do_deodex
 sign_files_in_folder_bluth=$chufang_scripts_bluth_dir/sign_files_in_folder
 do_zipalign_bluth=$chufang_scripts_bluth_dir/do_zipalign
+change_rom_name_bluth=$chufang_scripts_dir/bluth/change_rom_name
 
 press_enter=$ROMer_scripts_bluth_dir/press_enter
 
@@ -95,7 +96,7 @@ $do_zipalign_bluth
 echo do_deodex
 $do_deodex
 echo change_rom_name
-$change_rom_name
+$change_rom_name_bluth
 
 
 echo ----------------------------------
