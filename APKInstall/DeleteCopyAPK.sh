@@ -27,6 +27,10 @@ rm AppDisabler.apk
 rm Baiduinput_v4.3.1.5.apk
 rm BaiduNetworkLocation.apk
 rm cleanmaster.apk
+rm Email.apk
+rm Updater.apk
+rm Transfer.apk
+
 
 echo cd $systemVendor_dir/
 cd $systemVendor_dir/
